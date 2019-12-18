@@ -31,6 +31,25 @@
                                         @csrf
                                     </form>
                                 </div>
+<<<<<<< HEAD
                         @endguest
   </nav>
 @endsection
+=======
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <main class="py-4">
+            <div class="container">
+            @yield('content')
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+>>>>>>> 55ea19227e9966f187a1198cba0e288d6a32b51c

@@ -5,14 +5,22 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+<<<<<<< HEAD
                 <div class="card-header">{{ __('Ingresar') }}</div>
+=======
+                <div class="card-header">{{ __('Login') }}</div>
+>>>>>>> 55ea19227e9966f187a1198cba0e288d6a32b51c
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
+<<<<<<< HEAD
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo electrónico') }}</label>
+=======
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+>>>>>>> 55ea19227e9966f187a1198cba0e288d6a32b51c
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
