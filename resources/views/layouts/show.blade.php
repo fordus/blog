@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="{{ app()->getLocale() }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Pricing example · Bootstrap</title>
+    <title>{{ config('app.name', 'Proyecto - Tristan Vidal') }}</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -45,7 +45,7 @@
   <h5 class="my-0 mr-md-auto font-weight-normal">Quote</h5>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="{{ route('index') }}">Inicio</a>
-    <a class="p-2 text-dark" href="{{ route('price') }}">Precios</a>
+    <a class="p-2 text-dark" href="{{ route('price') }}">Planes</a>
     <a class="p-2 text-dark" href="{{ route('docs') }}">Documentación</a>
 
     @if (Route::has('login'))

@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="jumbotron mt-3">
-    <h1>Bottom Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/4.4/components/navbar/" role="button">View navbar docs »</a>
+    <h1>Incio del sitio</h1>
+    <p class="lead">Este es un ejemplo para la página principal.</p>
+    <a class="btn btn-lg btn-primary" href="{{ route('docs') }}" role="button">Ver documentación »</a>
 </div>
 @endsection
