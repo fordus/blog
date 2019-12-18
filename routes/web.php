@@ -11,7 +11,16 @@
 */
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');;
+
+Route::get('/planes', function () {
+    return view('price');
+})->name('price');;
+
+Route::get('/documentacion', function () {
+    return view('docs');
+})->name('docs');;
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['auth']], function() {
